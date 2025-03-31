@@ -1,0 +1,21 @@
+{
+    "Rules": [
+      {
+        "Condition": "CPU.Contains(\"Intel Core\") AND MemoryGB >= 16",
+        "ImagePath": "SystemImages\\Intel_Win11Pro_24H2.wim"
+      },
+      {
+        "Condition": "CPU.Contains(\"AMD Ryzen 5 5600X 6-Core Processor\") AND MemoryGB >= 16",
+        "ImagePath": "SystemImages\\AMD_Win11Pro_24H2.wim"
+      },
+      {
+        "Condition": "CPU.Contains(\"Intel Core\") AND MemoryGB < 16",
+        "ImagePath": "SystemImages\\Intel_Win10Pro_22H2.wim"
+      },
+      {
+        "Condition": "CPU.Contains(\"AMD Ryzen\") AND MemoryGB < 16",
+        "ImagePath": "SystemImages\\AMD_Win10Pro_22H2.wim"
+      }
+    ]
+  
+}
